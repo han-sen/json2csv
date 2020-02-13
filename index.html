@@ -1,0 +1,26 @@
+<div class="page-wrap">
+    <h1>JSON to CSV</h1>
+    <main class="converter-wrap">
+    <section class="side-wrap">
+      <p>Paste JSON here</p>
+      <textarea id="text-json" placeholder='add json here...'></textarea>
+      <div class="button-wrap">
+        <button id="submit-json" onclick="sendJSON()">Submit JSON</button>
+        <button id="clear-json" onclick="clearJSON()">Clear</button>
+      </div>
+    </section>
+    <section class="side-wrap">
+      <p>CSV Output</p>
+      <textarea id="text-csv"></textarea>
+      <div class="button-wrap">
+        <input id="file-name" placeholder="filename"></input>
+        <select id="type-select">
+          <option value="txt">.txt</option>
+          <option value="csv">.csv</option>
+        </select>
+        <button id="save-csv" onclick="saveCSV()">Save File</button>
+      </div>
+    </section>
+    </main>
+  <p class="details" id="button-generate">You can generate some sample JSON <a href="https://mockaroo.com/" target='_blank'>here</a>.</p>
+</div>
